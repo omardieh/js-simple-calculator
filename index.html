@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <script>
+      // if(operator === "+") {
+      //     console.log(firstValue + secondValue);
+      // } else {
+      //     console.log(firstValue - secondValue);
+      // }
+      //   switch (operator) {
+      //     case "+":
+      //       console.log(firstValue + secondValue);
+      //       break;
+      //     case "-":
+      //       console.log(firstValue - secondValue);
+      //       break;
+      //     case "*":
+      //       console.log(firstValue * secondValue);
+      //       break;
+      //     case "/":
+      //       console.log(firstValue / secondValue);
+      //       break;
+      //     default:
+      //       console.log("Invalid operator");
+      //   }
+
+      function calculator(firstValue, operator, secondValue) {
+        switch (operator) {
+          case "+":
+            console.log(firstValue + secondValue);
+            break;
+          case "-":
+            console.log(firstValue - secondValue);
+            break;
+          case "*":
+            console.log(firstValue * secondValue);
+            break;
+          case "/":
+            console.log(firstValue / secondValue);
+            break;
+          default:
+            console.log("Invalid operator");
+        }
+      }
+
+      calculator(
+        parseInt(prompt("first value")),
+        prompt("operator"),
+        parseInt(prompt("second value"))
+      );
+    </script>
+  </body>
+</html>
